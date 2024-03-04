@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/demo-charity/static/css/main.6cb89af1.css",
-    "main.js": "/demo-charity/static/js/main.7e5b00a5.js",
+    "main.css": "/demo-charity/static/css/main.9701c9e9.css",
+    "main.js": "/demo-charity/static/js/main.d7659e1a.js",
     "static/js/787.06ff8373.chunk.js": "/demo-charity/static/js/787.06ff8373.chunk.js",
-    "static/media/Brandy_Brasket__Resume_Frontend_Engineer.pdf": "/demo-charity/static/media/Brandy_Brasket__Resume_Frontend_Engineer.341977b9fe29ff2b214c.pdf",
-    "static/media/Brandy_Brasket__Cover_Letter__Frontend_Engineer.pdf": "/demo-charity/static/media/Brandy_Brasket__Cover_Letter__Frontend_Engineer.91ebfc3c0598cf4b1d6a.pdf",
     "index.html": "/demo-charity/index.html",
-    "main.6cb89af1.css.map": "/demo-charity/static/css/main.6cb89af1.css.map",
-    "main.7e5b00a5.js.map": "/demo-charity/static/js/main.7e5b00a5.js.map",
+    "main.9701c9e9.css.map": "/demo-charity/static/css/main.9701c9e9.css.map",
+    "main.d7659e1a.js.map": "/demo-charity/static/js/main.d7659e1a.js.map",
     "787.06ff8373.chunk.js.map": "/demo-charity/static/js/787.06ff8373.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cb89af1.css",
-    "static/js/main.7e5b00a5.js"
+    "static/css/main.9701c9e9.css",
+    "static/js/main.d7659e1a.js"
   ]
 }
