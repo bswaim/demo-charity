@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function TextLink ({text, onClick}) {
     return (
-        <div onClick={() => onClick()}>{text}</div>
+        <button onClick={() => onClick()}>{text}</button>
     )
 }
 TextLink.propTypes = {
