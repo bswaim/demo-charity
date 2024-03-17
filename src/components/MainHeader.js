@@ -13,7 +13,7 @@ function MainHeader () {
         <div className='px-4 w-full h-[50px] flex justify-between align-center items-center'>
             <SearchBar/>
             <TextLink text='Create Fundraiser' onClick={() => setShowStartCampaignForm(!showStartCampaignForm)}/>
-            <button><img alt='logo' src='https://bswaim.github.io/demo-charity/charity-logo.jpg'/></button>
+            <button><img alt='logo' src='https://bswaim.github.io/demo-charity/charity-logo.png'/></button>
             <Button text='Share'/>
             <Button text='Donate'/>
         </div>
