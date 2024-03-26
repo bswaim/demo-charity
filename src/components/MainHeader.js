@@ -10,12 +10,10 @@ function MainHeader () {
     // const [showDonatePage, setShowDonatePage] = useState(false);
 
     return (
-        <div className='px-4 w-full h-[50px] flex justify-between align-center items-center'>
-            <SearchBar/>
-            <TextLink text='Create Fundraiser' onClick={() => setShowStartCampaignForm(!showStartCampaignForm)}/>
-            <button><img alt='logo' src='https://bswaim.github.io/demo-charity/charity-logo.png'/></button>
-            <Button text='Share'/>
-            <Button text='Donate'/>
+        <div className='h-[50px] grid grid-cols-3 w-full items-center'>
+            <SearchBar />
+            <button className='flex justify-center'><img alt='logo' className='h-[30px]' src='https://bswaim.github.io/demo-charity/charity-logo.png'/></button>
+            <TextLink classNames='flex justify-end pr-4' text='Create' onClick={() => setShowStartCampaignForm(!showStartCampaignForm)}/>
         </div>
     )
 }

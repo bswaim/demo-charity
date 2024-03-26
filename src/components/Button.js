@@ -6,7 +6,7 @@ function Button ({
     onClick = Function.prototype
 }) {
     return (
-        <button className='' onClick={() => onClick()}>
+        <button onClick={() => onClick()}>
             {text}
         </button>
     )

@@ -2,26 +2,27 @@ import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import SearchResultsMenu from "./SearchResultsMenu";
+import PropTypes from "prop-types";
 
-function SearchBar() {
+function SearchBar({classNames}) {
     const [valueState, setValueState] = useState('');
     const [resultsMenuOpen, setResultsMenuOpen] = useState(false);
     const [searchResultsList, setSearchResultsList] = useState([{fundraiserName: 'Water'}]);
 
     return (
-        <div className='search-container relative'>
+        <div className='search-container relative min-w-[100px] max-w-[300px]'>
             <input
                 autoComplete="off"
-                className='rounded-full py-1 pl-3 pr-8 border-solid border-1 border-black'
+                className={`rounded-full w-full py-1 pl-3 pr-4 border-solid border-1 border-black ${classNames}`}
                 onChange={(e) => setValueState(e.target.value)}
                 onFocus={() => setResultsMenuOpen(true)}
                 onBlur={() => setResultsMenuOpen(false)}
-                placeholder='Search for fundraiser'
+                placeholder='Search'
                 type='search'
                 value={valueState}
             />
             <FontAwesomeIcon
-                className='relative right-6 top-0 text-gray-400 cursor-pointer'
+                className='absolute right-2 top-2 text-gray-400 cursor-pointer'
                 icon={faSearch}
                 onClick={() => setResultsMenuOpen(true)}
             />
@@ -30,6 +31,10 @@ function SearchBar() {
             </div>)}
         </div>
     )
+}
+
+SearchBar.propTypes = {
+    classNames: PropTypes.string
 }
 
 export default SearchBar;
